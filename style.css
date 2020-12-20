@@ -1,0 +1,742 @@
+
+/*--------#1b1919------For The Main Background Color-------------*/ /*save and run*/
+body{
+	background-color: #1b1919;
+	background-image: linear-gradient(to left,transparent,#690c0c78);
+	color: white;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+*{
+	font-family: sans-serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #542020; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/*---------------Headder Section---------------------------*/
+header{
+	color: white;
+	display: flex;
+	flex-direction: row;
+	width: 95%;
+	margin-left: 3%;
+	margin-top: 4%;
+	justify-content: space-around;
+}
+#web-logo{
+	height: 80px;
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: -21px;
+}
+#tag-line {
+	width: 83px;
+	height: 100%;
+}
+#tag-line h4{
+	margin-top: -22px;
+	width: 154%;
+	font-family: sans-serif;
+	font-weight: 650;
+	font-size: 1.5rem;
+}
+#tag-line h3{
+	font-family: sans-serif;
+	font-weight: lighter;
+	font-size: 1.5rem;
+}
+#web-logo img{
+	height: 100%;
+	width: 80px;
+	margin-right: 5%;
+}
+/*----search----*/
+#search{
+	display: flex;
+	flex-direction: row;
+	margin-left: 578px;
+	justify-content: space-around;
+}
+.btn{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	width: 37px;
+	height: 30px;
+	background-color: #542020;
+	border-right: 0px;
+	border:0px;
+}
+
+.btn i{
+	color: white;
+	padding: 5px;
+	width:16px;
+	height: 17px;
+}
+.btn-mic {
+	width: 37px;
+	height: 30px;
+	border:0px;
+	background-color: #542020;
+	border-top-right-radius:10px;
+	border-bottom-right-radius: 10px;  
+}
+.btn-mic i{
+	color: white;
+	padding: 5px;
+	width:16px;
+	height: 17px;
+}
+#search form input{
+	border-bottom:0px;
+	color: white;
+	background-color: #542020;
+	border-right: 0px;
+	border-left: 0px;
+	border-top:0px;
+	line-height: 1.8rem;
+}
+/*----for removing ugly borders of forms-----*/
+#search input:focus, textarea:focus, select:focus,button:focus{
+        outline: none;
+    }
+/*----Notification Bell And Drop Down---------*/
+#bell{
+	height: 50px;
+}
+.dropbtn img{
+	margin-top: -24px;
+	margin-left: 31px;
+	height: 25px;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  /*transition: all 1s ease-in-out;*/
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/*--Hidden Drop Down--*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.7rem;
+  font-family: sans-serif;
+}
+.dropdown-content a:hover {background-color: #542020;}
+/*--To make Drop Down Visible--*/
+.dropdown:hover .dropdown-content {display: block;}
+/*--Bell Button Background After Hover--*/
+.dropdown:hover .dropbtn {background-color: transparent;}
+/*-----------Profile Picture-------------*/
+.profile-pic img{
+	margin-top: -28px;
+	margin-left: 9px;
+	height: 61px;
+	border-radius: 50%;
+}
+
+/*---------Main----------*/
+#main{
+	display: flex;
+	flex-direction: row;
+	margin-top: 100px;
+	justify-content: space-between;
+	width: 80%;
+}
+#left-article{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 20px;
+}
+#song-card{
+	margin-left: -245px;
+	display: flex;
+	flex-direction: row;
+}
+#song-card img{
+	border-radius: 20px;
+	box-shadow: 0px 8px 16px 0px black;
+}
+#cp {
+    position: relative;
+    top: 10%;
+    height: 227px;
+    left: 21%;
+    z-index: 0;
+    transition: all 0.5s ease-in-out;
+}
+#maroon5{
+	height: 279px;
+	left:30%;
+	z-index:1;
+}
+#shawn-mendes{
+	height: 227px;
+	position: relative;
+	left: -21%;
+	top: 10%;
+	z-index: 0;
+	transition: all 0.5s ease-in-out;
+}
+#cp:hover{
+	height: 250px;
+	top: 5%;
+	z-index: 2;
+
+}
+#shawn-mendes:hover{
+	height: 250px;
+	top: 5%;
+	z-index: 2;
+}
+/*--------latest songs -----------*/
+#latest{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 80px;
+}
+#collection{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 850px;
+}
+#collection-2{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 850px;
+}
+.latest-song{
+	width: 400px;
+	background-color: #1b1919;
+	height: 165px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 15px;
+	box-shadow: 0px 8px 16px 0px black;
+}
+.latest-song img {
+	position: relative;
+	left: -1px;
+    height: 105px;
+    width: 105px;
+}
+.date {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    left: -48px;
+}
+.threebtn{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/*---------------Artists---------------------------*/
+#artists{
+	margin-top: 50px;
+}
+#gallery{
+	margin-top: 32px;
+	margin-left: 24px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.block{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+#gallery img{
+	margin-left: 15px;
+	border-radius: 50%;
+	height: 181px;
+}
+.image-description{
+	font-weight: bold;
+	margin-left: 61px;
+}
+/*-----------------Station----------------------------------*/
+#station{
+	margin-left: 10px;
+	display: flex;
+	flex-direction: row;
+	margin-top: 50px;
+	width: 100%;
+	background-color: #542020;
+}
+.s-logo img{
+	padding: 20px;
+	height: 80px;
+	width: 80px;
+}
+
+#s-tags{
+
+	margin:20px 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.s-img{
+	display: flex;
+	flex-direction: column;
+}
+.s-img img{
+	z-index: 0;
+	opacity: 0.5;
+	margin-top: -7px;
+	margin-left: 15px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+.s-img p{
+	font-weight: bolder;
+	margin-left: 44px;
+	margin-top: -55px;
+	z-index: 2;
+}
+#workout p{
+	z-index: 2;
+	margin-left: 32px;
+}
+/*---------------------Song Categories----------------------*/
+#categories{
+	margin-left: -5px;
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+.individual{
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	height: 196px;
+    width: 300px;
+	overflow: hidden;
+}
+.individual img {
+	border-radius: 20px;
+	opacity: 0.6;
+    height: 196px;
+    width: 274px;
+    margin-left: 20px;
+    transition: transform .5s ease;
+    overflow: hidden;
+}
+.individual h4{
+	z-index: 2;
+	margin-left: 97px;
+	margin-top: -92px;
+	font-weight: bolder;
+	font-size: 1.6rem;
+}
+#party{
+	margin-left: 114px;
+}
+.individual:hover img{
+	transform: scale(1.05);
+	opacity: 1;
+}
+/*-----------------Tribute To Shushant & Latest English-----------------------*/
+.song-gal{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.songs{
+	display: flex;
+	flex-direction: column;
+}
+#main-songs{
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+}
+.songs img{
+	border-radius: 20px;
+	margin-left: 18px;
+	height: 150px;
+	width: 150px;
+}
+.songs h4,.songs p,.songs h5{
+	margin-left: 21px;
+	margin-top: 4px;
+}
+.songs p{
+	margin-top: -16px;
+}
+/*------------------Right Side QUEUE---------------------------------*/
+#right-article{
+	width: 40%;
+	display: flex;
+	margin-left: 20px;
+	flex-direction: column;
+}
+#menue{
+	margin-top: -61px;
+	display: flex;
+	flex-direction: row;
+	color: #9c3131;
+	justify-content: space-around;
+}
+#menue h3{
+	margin-left: 357px;
+	margin-right: 20px;
+}
+#menue i{
+	position: relative;
+	top: 21px;
+}
+#list{
+	margin-top: 60px;
+	margin-left: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.q-songs{
+	display: flex;
+	flex-direction: row;
+}
+.name{
+	margin-left: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.artist-l{
+	display: flex;
+	flex-direction: column;
+}
+.q-songs img{
+	height: 70px;
+	width: 70px;
+	margin-left: 17px;
+}
+.artist-l h4{
+	position: relative;
+	top:-10px;
+}
+.artist-l p{
+	position: relative;
+	top:-36px;
+}
+.heart i{
+	position: relative;
+	left: 166px;
+	top: 10px;
+}
+#sucker i{
+	left: 137px;
+}
+/*-----------------------------------footer-----------#1d0304-----------------------*/
+footer{
+	/*opacity: 0.7;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100vw;
+	height: 77PX;
+	background-color: #150a0a;
+	/*position: relative;*/
+	top: 579px;
+	position: fixed;
+	/*margin-left: -8px;*/
+	box-shadow: 0px -6px 8px 0px #1d0304;
+	z-index: 10;
+}
+#song-img img{
+	height: 70px;
+	width: 70px;
+	border-radius: 20px;
+	margin-left: -475px;
+}
+#controls{
+	display: flex;
+	flex-direction: column;
+	font-size: 1.9rem;
+	z-index: 5;
+}
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 300%;
+  height: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  margin-left: -180px;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 60px;
+}
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ce4747;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: red;
+  cursor: pointer;
+}
+#song-info{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    left: -392px;
+    top: 1px;
+}
+#volume i{
+	font-size: 1.7rem;
+	position: relative;
+	left: 469px;
+	top: 23px;
+	right: 5%;
+}
+#space{
+		margin-top: 10px;
+	width: 100%;
+	height: 100px;
+	background-color: transparent;
+
+}
+/*------------------------------------media queries----------------------------------------------*/
+@media screen and (max-width: 1314px){
+	#main{
+		flex-wrap: wrap;
+	}
+	#left-article{
+		width: 90%;
+		margin-left: 16%;
+	}
+	#song-card {
+    	position: relative;
+    	left: 7%;
+    	width: 75vw;
+	}
+	#latest {
+    margin-left: 3%;
+	}
+	#artists {
+    	margin-left: 5%;
+	}
+	#right-article{
+		margin-left: 41%;
+		width: 75vw;
+	}
+	#right-article h1{
+		position: relative;
+		left: -224px;
+	}
+	#menue {
+		position: relative;
+		left: 81px;
+	}
+	.quan{
+		position: relative;
+		left: -186px;
+	}
+	.q-songs img {
+	    margin-left: -160px;
+	}
+	.artist-l p {
+	    left: -1px;
+	}
+	.heart i {
+    	left: 508px;
+	}
+	#sucker i {
+    	left: 476px;
+	}
+	#search {
+	    margin-left: 466px;
+	}
+}
+@media screen and (max-width: 1264px){
+	#volume i {
+	    left: 32vw;
+	}
+	#song-info {
+	    left: -26vw;
+	}
+	#song-img img {
+	    position: relative;
+	    left: 4vw;
+	}
+}
+@media screen and (max-width: 1202px){
+	#search {
+	    margin-left: 343px;
+	}
+	#song-card {
+    	left: 4%;
+	}
+	#artists {
+    	margin-left: 1%;
+	}
+}
+@media screen and (max-width: 1168px){
+	#song-card {
+    	left: 2%;
+	}
+	#station {
+	    width: 105%;
+	    margin-left: -10px;
+	}
+	#categories {
+	    margin-left: -30px;
+	    width: 107%;
+	}
+	#song-img img {
+    	left: 7vw;
+	}
+	#latest {
+    	margin-left: -1%;
+	}
+}
+@media screen and (max-width: 1135px){
+	#song-card {
+		width: 93vw;
+    	left: 0%;
+	}
+	#latest {
+    	margin-left: -2%;
+	}
+	#artists {
+    	margin-left: -2%;
+	}
+	.song-gal {
+	    margin-left: -2%;
+	}
+	#song-img img {
+    	left: 9vw;
+	}
+}
+@media screen and (max-width: 1112px){
+	#station {
+	    width: 110%;
+	    margin-left: -32px;
+	}
+	#song-card {
+		width: 107vw;
+    	left: -2%;
+	}
+	#search {
+	    margin-left: 233px;
+	}
+}
+@media screen and (max-width: 1084px){
+	.song-gal {
+	    margin-left: -5%;
+	}
+	#latest {
+    	margin-left: -5%;
+	}
+	#artists {
+    	margin-left: -5%;
+	}
+	#list{
+		margin-left: -10px;
+	}
+	#station {
+	    width: 113%;
+	    margin-left: -42px;
+	}
+	#song-img img {
+    	left: 11vw;
+	}
+}
+@media screen and (max-width: 1053px){
+	.slider {
+	    position: absolute;
+	    top: -10px;
+	    left: 182px;
+	    width: 98vw;
+	}
+	#controls{
+		margin-top: 16px;
+	}
+	#song-card {
+    	left: -4%;
+	}
+	#s-tags {
+		margin-left: -6px;
+	}
+}
+@media screen and (max-width: 1027px){
+	.song-gal {
+	    margin-left: -8%;
+	}
+	#latest {
+    	margin-left: -8%;
+	}
+	#artists {
+    	margin-left: -8%;
+	}
+}
